@@ -1,14 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import css from './page.module.css';
+import  Hero  from '@/components/Hero/Hero';
+
 
 export default function Home() {
+ 
   return (
-    // <div className={styles.page}>
-      <main className={styles.main}>
-        <div>
-          <h1>Plan, Cook, and Share Your Flavors</h1>
-        </div>
-      </main>
-    // </div>
+     <Hero/>
   );
 }
