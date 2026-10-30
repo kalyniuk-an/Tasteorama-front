@@ -1,7 +1,8 @@
 export interface Recipe {
-  id: string
+  _id: string
   title: string
   category: string
+  thumb: string
   ingredients: []
   instructions: string
   time: number

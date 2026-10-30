@@ -21,7 +21,7 @@ interface FetchRecipesParams {
   search?: string;
 }
 
-const API_URL = "https://tasteorama-i9vn.onrender.com/resipes";
+const API_URL = "https://tasteorama-i9vn.onrender.com/recipes";
 export async function fetchRecipes(params: FetchRecipesParams): Promise<FetchRecipesRecponse> {
   
   const { page, perPage, search } = params;

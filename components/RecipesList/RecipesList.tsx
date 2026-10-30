@@ -1,16 +1,20 @@
 import css from './RecipesList.module.css';
 import RecipeCard from '../RecipeCard/RecipeCard';
-// import type { Recipe } from '@/types/recipe';
+import type { Recipe } from '@/types/recipe';
 
-// interface RecipesListProps{
-//   recipes: [];
-// }{ recipes }: RecipesListProps
+interface RecipesListProps{
+  recipes: Recipe[];
+}
 
-export default function RecipesList() {
+export default function RecipesList({ recipes }: RecipesListProps) {
   
   return (
     <ul className={css.list}>
-      <RecipeCard/>
+      {recipes.map((recipe) =>
+        <li key={recipe._id} className={css.recipesItem}>
+          <RecipeCard recipe={recipe} />
+      </li>)}
+      
     </ul>
   )
 }
