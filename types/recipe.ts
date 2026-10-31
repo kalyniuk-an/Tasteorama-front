@@ -5,6 +5,7 @@ export interface Recipe {
   thumb: string
   ingredients: []
   instructions: string
+  description: string
   time: number
   createdAt: string
   updatedAt: string

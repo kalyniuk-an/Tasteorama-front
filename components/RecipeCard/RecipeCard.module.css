@@ -1,0 +1,47 @@
+.image {
+  border-radius: 8px;
+}
+
+.title{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 8px;
+
+  width: 264px;
+  height: 58px;
+
+  font-weight: 700;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: var(--black);
+}
+
+.clock{
+  
+  display: flex;
+  
+ 
+  padding: 2px 0 0;
+  width: 53px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--black);
+
+
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 4px;
+
+border-radius: 8px;
+padding: 2px 8px 2px 4px;
+width: 53px;
+height: 28px;
+
+background: var(--white);
+
+} 

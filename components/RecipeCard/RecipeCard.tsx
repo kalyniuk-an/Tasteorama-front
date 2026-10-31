@@ -17,24 +17,26 @@ export default function RecipeCard({recipe}:Props) {
         height={178}
         className={css.image}
       />
-      <div>
+      <div className={css.title}>
         <p>{recipe.title}</p>
-        <div>
+        <div className={css.clock}>
           <Image
             src="/clock.svg"
             alt=""
             width={24}
             height={24}
           />
-          <p>clock</p>
-          <p className={css.desc}>desc</p>
+          <p>{recipe.time }</p>
+        </div>
+      </div>
+      <p className={css.desc}>{recipe.description}</p>
           <p className={ css.cal}></p>
           <div>
             <Link className={css.link} href={`/recipes/id`} >Lean more</Link>
             <button>f</button>
           </div>
-        </div>
-      </div>
+        
+     
     </div>
   )
 }
